@@ -1280,52 +1280,52 @@ const ClinicianDashboard = () => {
     <div style={{ display:'grid', gridTemplateColumns:'200px 1fr', height:'100%', minHeight:0, overflow:'hidden', background:T.bg1 }}>
       {/* Sidebar */}
       <div style={{ background:T.bg1, borderRight:`1px solid ${T.border}`, display:'flex', flexDirection:'column', overflow:'hidden' }}>
-        <div style={{ padding:'16px', borderBottom:`1px solid ${C.border}`, display:'flex', alignItems:'center', gap:8 }}>
-          <span style={{ width:8, height:8, borderRadius:'50%', background:C.teal,
-            boxShadow:`0 0 6px ${C.teal}`, animation:'psyPulse 2s infinite' }} />
-          <span style={{ fontFamily:C.sans, fontWeight:700, fontSize:13, color:C.white }}>PsySonics</span>
-          <Badge color={C.teal}>v2.1</Badge>
+        <div style={{ padding:'16px', borderBottom:`1px solid ${T.border}`, display:'flex', alignItems:'center', gap:8 }}>
+          <span style={{ width:8, height:8, borderRadius:'50%', background:T.teal,
+            boxShadow:`0 0 6px ${T.teal}`, animation:'psyPulse 2s infinite' }} />
+          <span style={{ fontFamily:T.sans, fontWeight:700, fontSize:13, color:T.white }}>PsySonics</span>
+          <Badge color={T.teal}>v2.1</Badge>
         </div>
         <div style={{ padding:'12px 10px', flex:1 }}>
-          <div style={{ fontFamily:C.sans, fontSize:10, fontWeight:700, letterSpacing:'0.1em',
-            textTransform:'uppercase', color:C.w20, padding:'0 8px', marginBottom:4 }}>Clinic</div>
+          <div style={{ fontFamily:T.sans, fontSize:10, fontWeight:700, letterSpacing:'0.1em',
+            textTransform:'uppercase', color:T.w20, padding:'0 8px', marginBottom:4 }}>Clinic</div>
           {navItems.slice(0,3).map(n => (
             <div key={n.id} onClick={() => setActiveNav(n.id)} style={{
               display:'flex', alignItems:'center', gap:9, padding:'8px 10px', borderRadius:6,
-              fontFamily:C.sans, fontSize:12, fontWeight:500,
-              color: activeNav===n.id ? C.teal : C.w40,
-              background: activeNav===n.id ? C.tealGlow : 'transparent',
-              border: activeNav===n.id ? `1px solid ${C.teal}33` : '1px solid transparent',
+              fontFamily:T.sans, fontSize:12, fontWeight:500,
+              color: activeNav===n.id ? T.teal : T.w40,
+              background: activeNav===n.id ? T.tealGlow : 'transparent',
+              border: activeNav===n.id ? `1px solid ${T.teal}33` : '1px solid transparent',
               cursor:'pointer', marginBottom:1, transition:'all 0.15s',
             }}>
-              <span style={{ color:activeNav===n.id?C.teal:C.w30, opacity:activeNav===n.id?1:0.7 }}>{n.icon}</span>
+              <span style={{ color:activeNav===n.id?T.teal:T.w30, opacity:activeNav===n.id?1:0.7 }}>{n.icon}</span>
               {n.label}
             </div>
           ))}
-          <div style={{ fontFamily:C.sans, fontSize:10, fontWeight:700, letterSpacing:'0.1em',
-            textTransform:'uppercase', color:C.w20, padding:'12px 8px 4px' }}>Soundframe Library</div>
+          <div style={{ fontFamily:T.sans, fontSize:10, fontWeight:700, letterSpacing:'0.1em',
+            textTransform:'uppercase', color:T.w20, padding:'12px 8px 4px' }}>Soundframe Library</div>
           {navItems.slice(3,5).map(n => (
             <div key={n.id} onClick={() => setActiveNav(n.id)} style={{
               display:'flex', alignItems:'center', gap:9, padding:'8px 10px', borderRadius:6,
-              fontFamily:C.sans, fontSize:12, fontWeight:500,
-              color: activeNav===n.id ? C.teal : C.w40,
-              background: activeNav===n.id ? C.tealGlow : 'transparent',
-              border: activeNav===n.id ? `1px solid ${C.teal}33` : '1px solid transparent',
+              fontFamily:T.sans, fontSize:12, fontWeight:500,
+              color: activeNav===n.id ? T.teal : T.w40,
+              background: activeNav===n.id ? T.tealGlow : 'transparent',
+              border: activeNav===n.id ? `1px solid ${T.teal}33` : '1px solid transparent',
               cursor:'pointer', marginBottom:1, transition:'all 0.15s',
             }}>
               <span style={{ opacity:0.7 }}>{n.icon}</span>
               {n.label}
             </div>
           ))}
-          <div style={{ fontFamily:C.sans, fontSize:10, fontWeight:700, letterSpacing:'0.1em',
-            textTransform:'uppercase', color:C.w20, padding:'12px 8px 4px' }}>Settings</div>
+          <div style={{ fontFamily:T.sans, fontSize:10, fontWeight:700, letterSpacing:'0.1em',
+            textTransform:'uppercase', color:T.w20, padding:'12px 8px 4px' }}>Settings</div>
           {navItems.slice(5).map(n => (
             <div key={n.id} onClick={() => setActiveNav(n.id)} style={{
               display:'flex', alignItems:'center', gap:9, padding:'8px 10px', borderRadius:6,
-              fontFamily:C.sans, fontSize:12, fontWeight:500,
-              color: activeNav===n.id ? C.teal : C.w40,
-              background: activeNav===n.id ? C.tealGlow : 'transparent',
-              border: activeNav===n.id ? `1px solid ${C.teal}33` : '1px solid transparent',
+              fontFamily:T.sans, fontSize:12, fontWeight:500,
+              color: activeNav===n.id ? T.teal : T.w40,
+              background: activeNav===n.id ? T.tealGlow : 'transparent',
+              border: activeNav===n.id ? `1px solid ${T.teal}33` : '1px solid transparent',
               cursor:'pointer', marginBottom:1, transition:'all 0.15s',
             }}>
               <span style={{ opacity:0.7 }}>{n.icon}</span>
@@ -1333,14 +1333,14 @@ const ClinicianDashboard = () => {
             </div>
           ))}
         </div>
-        <div style={{ padding:'12px 10px', borderTop:`1px solid ${C.border}` }}>
+        <div style={{ padding:'12px 10px', borderTop:`1px solid ${T.border}` }}>
           <div style={{ display:'flex', alignItems:'center', gap:8, padding:'8px' }}>
-            <div style={{ width:28, height:28, borderRadius:'50%', background:C.tealDark,
+            <div style={{ width:28, height:28, borderRadius:'50%', background:T.tealDark,
               display:'flex', alignItems:'center', justifyContent:'center',
-              fontFamily:C.sans, fontSize:10, fontWeight:700, color:C.teal, flexShrink:0 }}>SM</div>
+              fontFamily:T.sans, fontSize:10, fontWeight:700, color:T.teal, flexShrink:0 }}>SM</div>
             <div>
-              <div style={{ fontFamily:C.sans, fontSize:11, fontWeight:600, color:C.w70 }}>Dr. S. Mitchell</div>
-              <div style={{ fontFamily:C.sans, fontSize:10, color:C.w30 }}>Pearl Psych. Institute</div>
+              <div style={{ fontFamily:T.sans, fontSize:11, fontWeight:600, color:T.w70 }}>Dr. S. Mitchell</div>
+              <div style={{ fontFamily:T.sans, fontSize:10, color:T.w30 }}>Pearl Psych. Institute</div>
             </div>
           </div>
         </div>
@@ -1357,8 +1357,8 @@ const ClinicianDashboard = () => {
           <div style={{ display:'flex', flex:1, alignItems:'center', justifyContent:'center',
             flexDirection:'column', gap:12 }}>
             <div style={{ fontSize:32 }}>⚙</div>
-            <div style={{ fontFamily:C.serif, fontSize:22, fontStyle:'italic', color:C.w40 }}>Preferences</div>
-            <div style={{ fontFamily:C.sans, fontSize:12, color:C.w20 }}>Coming in the next demo update</div>
+            <div style={{ fontFamily:T.serif, fontSize:22, fontStyle:'italic', color:T.w40 }}>Preferences</div>
+            <div style={{ fontFamily:T.sans, fontSize:12, color:T.w20 }}>Coming in the next demo update</div>
           </div>
         )}
       </div>
