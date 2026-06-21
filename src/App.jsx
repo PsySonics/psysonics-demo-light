@@ -33,16 +33,16 @@ const T = {
 
 /* ── Data ── */
 const ALL_PATIENTS = [
-  { id:1,  initials:'A.R.', name:'Patient A.R.', compound:'Ketamine',   protocol:'KETAMINE-90',    status:'active',   joined:'Jan 2024', sessions:7,  nextDate:'Today 2:00 PM',  lastDate:'May 30',  portal:true,  diagnosis:'Depression / Anxiety',   clinician:'Dr. S. Mitchell' },
-  { id:2,  initials:'M.T.', name:'Patient M.T.', compound:'Psilocybin', protocol:'PSILOCYBIN-360', status:'active',   joined:'Mar 2024', sessions:3,  nextDate:'Today 2:30 PM',  lastDate:'May 22',  portal:true,  diagnosis:'Treatment-Resistant MDD', clinician:'Dr. S. Mitchell' },
-  { id:3,  initials:'D.K.', name:'Patient D.K.', compound:'MDMA',       protocol:'MDMA-PTSD-240',  status:'active',   joined:'Feb 2024', sessions:5,  nextDate:'Today 4:00 PM',  lastDate:'May 18',  portal:false, diagnosis:'PTSD',                    clinician:'Dr. S. Mitchell' },
-  { id:4,  initials:'S.L.', name:'Patient S.L.', compound:'Ketamine',   protocol:'KETAMINE-60',    status:'active',   joined:'Nov 2023', sessions:12, nextDate:'Jun 10',         lastDate:'Today',   portal:true,  diagnosis:'OCD / Anxiety',           clinician:'Dr. S. Mitchell' },
-  { id:5,  initials:'J.W.', name:'Patient J.W.', compound:'Psilocybin', protocol:'PSILOCYBIN-360', status:'active',   joined:'Apr 2024', sessions:2,  nextDate:'Jun 13',         lastDate:'Today',   portal:true,  diagnosis:'End-of-life anxiety',     clinician:'Dr. S. Mitchell' },
-  { id:6,  initials:'R.B.', name:'Patient R.B.', compound:'Ketamine',   protocol:'KETAMINE-90',    status:'upcoming', joined:'May 2024', sessions:0,  nextDate:'Jun 9',          lastDate:'—',       portal:false, diagnosis:'TBD — intake pending',    clinician:'Dr. S. Mitchell' },
-  { id:7,  initials:'C.H.', name:'Patient C.H.', compound:'MDMA',       protocol:'MDMA-PTSD-240',  status:'upcoming', joined:'May 2024', sessions:0,  nextDate:'Jun 12',         lastDate:'—',       portal:false, diagnosis:'Combat PTSD',             clinician:'Dr. S. Mitchell' },
-  { id:8,  initials:'T.N.', name:'Patient T.N.', compound:'Psilocybin', protocol:'PSILOCYBIN-360', status:'prior',    joined:'Aug 2023', sessions:8,  nextDate:'—',              lastDate:'Mar 15',  portal:true,  diagnosis:'Depression',              clinician:'Dr. S. Mitchell' },
-  { id:9,  initials:'E.V.', name:'Patient E.V.', compound:'Ketamine',   protocol:'KETAMINE-60',    status:'prior',    joined:'Sep 2023', sessions:6,  nextDate:'—',              lastDate:'Feb 28',  portal:false, diagnosis:'Chronic pain / MDD',      clinician:'Dr. S. Mitchell' },
-  { id:10, initials:'P.O.', name:'Patient P.O.', compound:'MDMA',       protocol:'MDMA-PTSD-240',  status:'prior',    joined:'Jul 2023', sessions:10, nextDate:'—',              lastDate:'Jan 10',  portal:true,  diagnosis:'PTSD — veteran',          clinician:'Dr. S. Mitchell' },
+  { id:1,  initials:'A.R.', name:'Patient A.R.', compound:'Ketamine',   protocol:'KETAMINE-90',    status:'active',   joined:'Jan 2025', sessions:7,  nextDate:'Today 2:00 PM',  lastDate:'May 30',  portal:true,  diagnosis:'Depression / Anxiety',   clinician:'Dr. S. Mitchell' },
+  { id:2,  initials:'M.T.', name:'Patient M.T.', compound:'Psilocybin', protocol:'PSILOCYBIN-360', status:'active',   joined:'Mar 2025', sessions:3,  nextDate:'Today 2:30 PM',  lastDate:'May 22',  portal:true,  diagnosis:'Treatment-Resistant MDD', clinician:'Dr. S. Mitchell' },
+  { id:3,  initials:'D.K.', name:'Patient D.K.', compound:'MDMA',       protocol:'MDMA-PTSD-240',  status:'active',   joined:'Feb 2025', sessions:5,  nextDate:'Today 4:00 PM',  lastDate:'May 18',  portal:false, diagnosis:'PTSD',                    clinician:'Dr. S. Mitchell' },
+  { id:4,  initials:'S.L.', name:'Patient S.L.', compound:'Ketamine',   protocol:'KETAMINE-60',    status:'active',   joined:'Nov 2024', sessions:12, nextDate:'Jun 10',         lastDate:'Today',   portal:true,  diagnosis:'OCD / Anxiety',           clinician:'Dr. S. Mitchell' },
+  { id:5,  initials:'J.W.', name:'Patient J.W.', compound:'Psilocybin', protocol:'PSILOCYBIN-360', status:'active',   joined:'Apr 2025', sessions:2,  nextDate:'Jun 13',         lastDate:'Today',   portal:true,  diagnosis:'End-of-life anxiety',     clinician:'Dr. S. Mitchell' },
+  { id:6,  initials:'R.B.', name:'Patient R.B.', compound:'Ketamine',   protocol:'KETAMINE-90',    status:'upcoming', joined:'May 2025', sessions:0,  nextDate:'Jun 9',          lastDate:'—',       portal:false, diagnosis:'TBD — intake pending',    clinician:'Dr. S. Mitchell' },
+  { id:7,  initials:'C.H.', name:'Patient C.H.', compound:'MDMA',       protocol:'MDMA-PTSD-240',  status:'upcoming', joined:'May 2025', sessions:0,  nextDate:'Jun 12',         lastDate:'—',       portal:false, diagnosis:'Combat PTSD',             clinician:'Dr. S. Mitchell' },
+  { id:8,  initials:'T.N.', name:'Patient T.N.', compound:'Psilocybin', protocol:'PSILOCYBIN-360', status:'prior',    joined:'Aug 2024', sessions:8,  nextDate:'—',              lastDate:'Mar 15',  portal:true,  diagnosis:'Depression',              clinician:'Dr. S. Mitchell' },
+  { id:9,  initials:'E.V.', name:'Patient E.V.', compound:'Ketamine',   protocol:'KETAMINE-60',    status:'prior',    joined:'Sep 2024', sessions:6,  nextDate:'—',              lastDate:'Feb 28',  portal:false, diagnosis:'Chronic pain / MDD',      clinician:'Dr. S. Mitchell' },
+  { id:10, initials:'P.O.', name:'Patient P.O.', compound:'MDMA',       protocol:'MDMA-PTSD-240',  status:'prior',    joined:'Jul 2024', sessions:10, nextDate:'—',              lastDate:'Jan 10',  portal:true,  diagnosis:'PTSD — veteran',          clinician:'Dr. S. Mitchell' },
 ];
 
 const ALL_SESSIONS = [
@@ -587,7 +587,7 @@ const DashboardView = ({ elapsed }) => {
       <div style={{ display:'flex', alignItems:'flex-start', justifyContent:'space-between', marginBottom:20 }}>
         <div>
           <div style={{ fontFamily:T.sans, fontSize:16, fontWeight:700, color:T.white }}>Today's Sessions</div>
-          <div style={{ fontFamily:T.sans, fontSize:11, color:T.w40, marginTop:2 }}>Friday, June 6 · 3 scheduled · 1 active</div>
+          <div style={{ fontFamily:T.sans, fontSize:11, color:T.w40, marginTop:2 }}>Friday, Jun 6 · 3 scheduled · 1 active</div>
         </div>
         <button style={{ fontFamily:T.sans, fontSize:11, fontWeight:600, color:T.bg, background:T.teal,
           border:'none', padding:'7px 14px', borderRadius:5, cursor:'pointer', display:'flex', alignItems:'center', gap:6 }}>
@@ -732,7 +732,7 @@ const LIBRARY = [
     duration:'90 min', phases:2, format:'Continuous',
     desc:'Sub-bass anchoring and smooth textural movement engineered to maintain body awareness through the dissociative state. No percussive content. No melodic resolution.',
     tags:['Sub-bass anchor','No percussion','Body-grounding','Onset + Peak'],
-    usedIn:'Clinical sessions', addedDate:'Jan 2024', plays:247,
+    usedIn:'Clinical sessions', addedDate:'Jan 2026', plays:247,
   },
   {
     id:'k-60', compound:'Ketamine', color:T.teal, icon:'🌊',
@@ -740,7 +740,7 @@ const LIBRARY = [
     duration:'60 min', phases:2, format:'Continuous',
     desc:'Condensed version of the Dissociative Grounding Arc for shorter ketamine infusion protocols. Same sub-bass structure, tighter timeline.',
     tags:['Sub-bass anchor','No percussion','Short protocol','60 min'],
-    usedIn:'Clinical sessions', addedDate:'Feb 2024', plays:183,
+    usedIn:'Clinical sessions', addedDate:'Feb 2026', plays:183,
   },
   {
     id:'k-int', compound:'Ketamine', color:T.teal, icon:'◌',
@@ -748,7 +748,7 @@ const LIBRARY = [
     duration:'20 min', phases:1, format:'Single arc',
     desc:'Post-session grounding soundframe for home integration use. Clinician-assigned via patient portal. Designed for the 24–72 hour window following a ketamine session.',
     tags:['Integration','Home use','Portal delivery','Grounding'],
-    usedIn:'Patient portal', addedDate:'Mar 2024', plays:412,
+    usedIn:'Patient portal', addedDate:'Mar 2026', plays:412,
   },
   {
     id:'k-int-ext', compound:'Ketamine', color:T.teal, icon:'◌',
@@ -756,7 +756,7 @@ const LIBRARY = [
     duration:'30 min', phases:1, format:'Single arc',
     desc:'Extended home integration soundframe for patients who benefit from a longer grounding session. Same acoustic architecture as the short version, expanded timeline.',
     tags:['Integration','Home use','Extended','Portal delivery'],
-    usedIn:'Patient portal', addedDate:'Apr 2024', plays:98,
+    usedIn:'Patient portal', addedDate:'Apr 2026', plays:98,
   },
   // ── PSILOCYBIN ──
   {
@@ -765,7 +765,7 @@ const LIBRARY = [
     duration:'360 min', phases:3, format:'Continuous',
     desc:'Three-arc structure: Journey Entry, Deep Processing, Gentle Return. Accommodates the full emotional spectrum without directing any of it. Free of culturally coded instrumentation, lyrics, and harmonic resolution.',
     tags:['3-arc structure','Full spectrum','6 hours','Trigger-free'],
-    usedIn:'Clinical sessions', addedDate:'Jan 2024', plays:89,
+    usedIn:'Clinical sessions', addedDate:'Jan 2026', plays:89,
   },
   {
     id:'p-240', compound:'Psilocybin', color:T.gold, icon:'✦',
@@ -773,7 +773,7 @@ const LIBRARY = [
     duration:'240 min', phases:3, format:'Continuous',
     desc:'4-hour version of the Full-Spectrum Journey Arc for medium-dose psilocybin protocols. Maintains the three-arc structure with compressed phase durations.',
     tags:['3-arc structure','4 hours','Medium dose','Full spectrum'],
-    usedIn:'Clinical sessions', addedDate:'Mar 2024', plays:54,
+    usedIn:'Clinical sessions', addedDate:'Mar 2026', plays:54,
   },
   {
     id:'p-int', compound:'Psilocybin', color:T.gold, icon:'◌',
@@ -781,7 +781,7 @@ const LIBRARY = [
     duration:'20 min', phases:1, format:'Single arc',
     desc:'Soft, supportive soundframe for integration in the days following a psilocybin session. Based on the Gentle Return phase of the Full-Spectrum Journey Arc.',
     tags:['Integration','Home use','Gentle','Portal delivery'],
-    usedIn:'Patient portal', addedDate:'Apr 2024', plays:201,
+    usedIn:'Patient portal', addedDate:'Apr 2026', plays:201,
   },
   // ── MDMA / PTSD ──
   {
@@ -790,7 +790,7 @@ const LIBRARY = [
     duration:'240 min', phases:4, format:'Continuous',
     desc:'Developed in direct response to patient feedback from MAPS FDA clinical trials. Supports dual-focus processing — inward exploration and relational presence — without intruding on either. Veteran-informed. MAPS-tested.',
     tags:['4-arc structure','MAPS-tested','Veteran-informed','Trauma-safe'],
-    usedIn:'Clinical sessions', addedDate:'Jan 2024', plays:76,
+    usedIn:'Clinical sessions', addedDate:'Jan 2026', plays:76,
   },
   {
     id:'m-int', compound:'MDMA / PTSD', color:T.red, icon:'◌',
@@ -798,7 +798,7 @@ const LIBRARY = [
     duration:'25 min', phases:1, format:'Single arc',
     desc:'Post-MDMA integration soundframe designed for the processing window in the days following a session. Supportive, non-directive. Particularly suited to veterans working with trauma.',
     tags:['Integration','PTSD','Veteran','Portal delivery'],
-    usedIn:'Patient portal', addedDate:'Feb 2024', plays:144,
+    usedIn:'Patient portal', addedDate:'Feb 2026', plays:144,
   },
   // ── GENERAL / INTEGRATION ──
   {
@@ -807,7 +807,7 @@ const LIBRARY = [
     duration:'30 min', phases:1, format:'Single arc',
     desc:'Sleep-support soundframe for use in the 1–3 nights following any session. Activates the parasympathetic nervous system. Rooted in humpback whale acoustics and U.S. Navy sonar research.',
     tags:['Sleep support','Any compound','Parasympathetic','Nature-sourced'],
-    usedIn:'Patient portal', addedDate:'Jan 2024', plays:528,
+    usedIn:'Patient portal', addedDate:'Jan 2026', plays:528,
   },
 ];
 
@@ -816,7 +816,7 @@ const NEW_RELEASES = [
     id:'nr-1', compound:'Ketamine', color:T.teal, icon:'🌊',
     name:'Ketamine Extended — 120 min', code:'KETAMINE-120',
     duration:'120 min', phases:3, format:'Continuous',
-    isNew:true, releaseDate:'Jun 2025',
+    isNew:true, releaseDate:'Jun 2026',
     desc:'A newly engineered 120-minute arc for higher-dose or extended ketamine infusion protocols. Three phases: Deep Onset, Dissociative Peak, and Soft Landing. Fills the gap between the 90-min and full 6-hour formats.',
     tags:['Extended protocol','3 phases','Higher dose','Sub-bass anchor'],
     badge:'New',
@@ -825,7 +825,7 @@ const NEW_RELEASES = [
     id:'nr-2', compound:'Psilocybin', color:T.gold, icon:'✦',
     name:'Micro-Journey Arc — 90 min', code:'PSILO-MICRO-90',
     duration:'90 min', phases:2, format:'Continuous',
-    isNew:true, releaseDate:'Jun 2025',
+    isNew:true, releaseDate:'Jun 2026',
     desc:'Designed for microdose-adjacent and lower-dose psilocybin protocols. Gentle, expansive, non-directive. Bridges the gap for clinicians working with patients at the lower end of the dosing spectrum.',
     tags:['Low dose','2 phases','Gentle','Expansive'],
     badge:'New',
@@ -834,7 +834,7 @@ const NEW_RELEASES = [
     id:'nr-3', compound:'MDMA / PTSD', color:T.red, icon:'◎',
     name:'Booster Session Arc — 60 min', code:'MDMA-BOOST-60',
     duration:'60 min', phases:2, format:'Continuous',
-    isNew:true, releaseDate:'Jun 2025',
+    isNew:true, releaseDate:'Jun 2026',
     desc:'A shorter MDMA arc for booster or follow-up sessions, designed for patients in later stages of a treatment course who require a lighter, more relational sound environment rather than a full deep-processing arc.',
     tags:['Booster session','Relational','Later-stage','MAPS-informed'],
     badge:'New',
@@ -843,7 +843,7 @@ const NEW_RELEASES = [
     id:'nr-4', compound:'Integration', color:'#9b7fd4', icon:'◌',
     name:'Breathwork Companion Arc', code:'INT-BREATH-20',
     duration:'20 min', phases:1, format:'Single arc',
-    isNew:true, releaseDate:'Jun 2025',
+    isNew:true, releaseDate:'Jun 2026',
     desc:'Our first soundframe purpose-built for use alongside breathwork practices between sessions. Supports conscious breathing rhythms without driving them. Designed to extend the integration window beyond traditional listening.',
     tags:['Breathwork','Between sessions','Integration','Any compound'],
     badge:'Beta',
@@ -934,7 +934,7 @@ const SoundframeLibraryView = () => {
         <div>
           <div style={{ fontFamily:T.sans, fontSize:16, fontWeight:700, color:T.white }}>Soundframe™ Library</div>
           <div style={{ fontFamily:T.sans, fontSize:11, color:T.w40, marginTop:2 }}>
-            {LIBRARY.length} soundframes across 3 compounds · Updated Jun 2025
+            {LIBRARY.length} soundframes across 3 compounds · Updated Jun 2026
           </div>
         </div>
         <div style={{ display:'flex', alignItems:'center', gap:8 }}>
@@ -1124,13 +1124,13 @@ const NewReleaseView = () => {
         <div>
           <div style={{ fontFamily:T.sans, fontSize:16, fontWeight:700, color:T.white }}>New Releases</div>
           <div style={{ fontFamily:T.sans, fontSize:11, color:T.w40, marginTop:2 }}>
-            June 2025 · {NEW_RELEASES.length} new soundframes added to your library
+            June 2026 · {NEW_RELEASES.length} new soundframes added to your library
           </div>
         </div>
         <span style={{ fontFamily:T.mono, fontSize:10, fontWeight:500,
           color:T.gold, background:'rgba(201,169,110,0.1)', border:'1px solid rgba(201,169,110,0.2)',
           padding:'4px 12px', borderRadius:20 }}>
-          Jun 2025 Drop
+          Jun 2026 Drop
         </span>
       </div>
 
@@ -1651,14 +1651,7 @@ export default function App() {
         padding:'0 20px', background:'rgba(253,250,246,0.95)', backdropFilter:'blur(20px)',
         justifyContent:'space-between', flexShrink:0, gap:12 }}>
         <div style={{ display:'flex', alignItems:'center', gap:9 }}>
-          <div style={{ width:28, height:28, border:`1.5px solid ${T.teal}`, borderRadius:5,
-            display:'flex', alignItems:'center', justifyContent:'center' }}>
-            <div style={{ display:'flex', gap:2, height:12, alignItems:'center' }}>
-              {[3,7,11,7,5,9,3].map((h,i)=>(
-                <span key={i} style={{ display:'block', width:2, height:h, borderRadius:1, background:T.teal }} />
-              ))}
-            </div>
-          </div>
+          <img src="/PsySonics_logo_signature.png" style={{ width:28, height:28, objectFit:'contain' }} />
           <span style={{ fontFamily:T.sans, fontWeight:700, fontSize:14, color:T.white }}>
             Psy<span style={{color:T.teal}}>Sonics</span>
           </span>
@@ -1726,7 +1719,7 @@ export default function App() {
       {/* Footer */}
       <div style={{ height:32, borderTop:`1px solid ${T.border}`, display:'flex', alignItems:'center',
         padding:'0 20px', justifyContent:'space-between', flexShrink:0 }}>
-        <span style={{ fontFamily:T.sans, fontSize:10, color:T.w20 }}>© 2025 PsySonics, PBC · Asheville, NC · SDVOSB</span>
+        <span style={{ fontFamily:T.sans, fontSize:10, color:T.w20 }}>© 2026 PsySonics, PBC · Asheville, NC · SDVOSB</span>
         <div style={{ display:'flex', gap:14 }}>
           {['Patent-Pending Technology','Dolby Atmos Spatial Audio','SDVOSB Certified'].map(s=>(
             <span key={s} style={{ fontFamily:T.sans, fontSize:9, fontWeight:600, color:T.w20, letterSpacing:'0.04em' }}>{s}</span>
